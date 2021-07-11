@@ -35,5 +35,13 @@ namespace Client
             //프로그램 전체 종료
             System.Windows.Forms.Application.Exit();
         }
+
+        private void multiPlayButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            MultiPlayForm multiPlayForm = new MultiPlayForm();
+            multiPlayForm.FormClosed += new FormClosedEventHandler(childForm_Closed);
+            multiPlayForm.Show();
+        }
     }
 }
