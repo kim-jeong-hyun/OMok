@@ -198,7 +198,7 @@ int main() {
 		SOCKET clientSocket = socket(AF_INET, SOCK_STREAM, NULL);
 		if (clientSocket = accept(serverSocket, (SOCKADDR*)&serverAddress, &addresssLength)) {
 			Client *client = new Client(nextID, clientSocket);
-			cout<<"[새로운 사용자 접속했습니다]"<<endl;
+			cout<<"[새로운 사용자 접속했습니다!]"<<endl;
 			CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)serverThread, (LPVOID)client, NULL, NULL);
 			connections.push_back(*client);
 			nextID++;
