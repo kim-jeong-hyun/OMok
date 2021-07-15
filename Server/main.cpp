@@ -70,6 +70,7 @@ void playClient(int roomID) {
 			ZeroMemory(sent, 256);
 			if (black) {
 				sprintf(sent, "%s", "[Play]Black");
+				black = false;
 			}
 			else {
 				sprintf(sent, "%s", "[Play]White");
