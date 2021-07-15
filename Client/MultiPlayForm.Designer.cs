@@ -95,6 +95,7 @@
             this.Controls.Add(this.boardPicture);
             this.Name = "MultiPlayForm";
             this.Text = "MultiPlayForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MultiPlayForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.boardPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
